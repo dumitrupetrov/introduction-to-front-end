@@ -1,0 +1,14 @@
+body{
+    /* align-items: center; */
+    width: 100%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #bdae4d;
+    font-size: 18px;
+    line-height: 0.2em;
+    display: table-cell;
+    padding: 20px 45px;
+}
+h1, p{
+    text-align: center;
+    margin-bottom: 30px;
+}
