@@ -1,0 +1,53 @@
+html{
+    height: 100%;
+    width: 1000px;
+}
+body {
+    margin: 0, 0;
+    height: 480px;
+    width: 480px;
+    background-color: #050210;
+    transform: translate(110%, 30%);
+}
+.fundal {
+    position: fixed;
+    transform: translate(300px, 300px);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: conic-gradient( #fb5dad , #55fb9f, #b97aff, #55fb9f );
+    filter: blur(2px);
+    animation: rotireCerc 1s reverse linear infinite;
+    box-shadow: 8px -7px 20px 6px #fb5dad, -12px 13px 20px 6px #55fb9f, -16px -15px 20px 6px #b97aff, 6px 6px 20px 6px #55fb9f;
+}
+    @keyframes rotireCerc {
+        from{
+            transform: rotate(360deg)
+        }
+        to{
+            transform: rotate(0deg)
+        }
+    }
+    @keyframes fill {
+        0% { transition-property: all; 
+        background-color: #050210;}
+        50%{
+            transition-property: all; 
+        background-color: #262527;
+        }
+        100% { transition-property: all; 
+        background-color: #424244;}
+        25%{transition-property: all; 
+            background-color: #424244;}
+        75%{transition-property: all; 
+            background-color: #050210;}
+    }
+.interior {
+    background-color: #050210;
+    width: 89%;
+    height: 89%;
+    border-radius: 50%;
+    position: relative;
+    transform: translate(6%, 6%);
+    animation: fill 5s alternate-reverse linear infinite;
+}
