@@ -6,7 +6,7 @@ body {
     margin: 0, 0;
     height: 480px;
     width: 480px;
-    background-color:  #050210;
+    background-color: white;
     transform: translate(110%, 30%);
 }
 .fundal {
@@ -18,7 +18,7 @@ body {
     background: conic-gradient( #fb5dad , #55fb9f, #b97aff, #55fb9f );
     filter: blur(2px);
     animation: rotireCerc 1s reverse linear infinite;
-    box-shadow: 12px 12px 6px 12px;
+    box-shadow: 6px -6px 6px 12px, -6px 6px 6px 12px;
 }
     @keyframes rotireCerc {
         from{
