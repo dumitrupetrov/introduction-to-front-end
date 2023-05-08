@@ -28,6 +28,28 @@ body {
             transform: rotate(0deg)
         }
     }
+    @keyframes fill {
+        0%{
+            background-color: #050210;
+            fill-opacity: 0;
+        }
+        25%{
+            background-color: rgb(131, 128, 128)
+            fill-opacity: 10;
+        }
+        50%{
+            background-color: rgb(131, 128, 128)
+            fill-opacity: 20;
+        }
+        75%{
+            background-color: rgb(131, 128, 128)
+            fill-opacity: 30;
+        }
+        100%{
+            background-color: #050210;
+            fill-opacity: 0;
+        }
+    }
 .interior {
     background-color: #050210;
     width: 89%;
@@ -35,4 +57,5 @@ body {
     border-radius: 50%;
     position: relative;
     transform: translate(6%, 6%);
+    animation: fill 10s  linear infinite;
 }
