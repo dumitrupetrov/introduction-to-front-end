@@ -18,7 +18,7 @@ body {
     background: conic-gradient( #fb5dad , #55fb9f, #b97aff, #55fb9f );
     filter: blur(2px);
     animation: rotireCerc 1s reverse linear infinite;
-    box-shadow: 6px -6px 20px 6px #fb5dad, -6px 6px 20px 6px #55fb9f, -6px -6px 20px 6px #b97aff, 6px 6px 20px 6px #55fb9f;
+    box-shadow: 8px -7px 20px 6px #fb5dad, -12px 13px 20px 6px #55fb9f, -16px -15px 20px 6px #b97aff, 6px 6px 20px 6px #55fb9f;
 }
     @keyframes rotireCerc {
         from{
