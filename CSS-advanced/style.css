@@ -29,26 +29,18 @@ body {
         }
     }
     @keyframes fill {
-        0%{
-            background-color: #050210;
-            fill-opacity: 0;
-        }
-        25%{
-            background-color: rgb(131, 128, 128)
-            fill-opacity: 10;
-        }
+        0% { transition-property: all; 
+        background-color: #050210;}
         50%{
-            background-color: rgb(131, 128, 128)
-            fill-opacity: 20;
+            transition-property: all; 
+        background-color: #262527;
         }
-        75%{
-            background-color: rgb(131, 128, 128)
-            fill-opacity: 30;
-        }
-        100%{
-            background-color: #050210;
-            fill-opacity: 0;
-        }
+        100% { transition-property: all; 
+        background-color: #424244;}
+        25%{transition-property: all; 
+            background-color: #424244;}
+        75%{transition-property: all; 
+            background-color: #050210;}
     }
 .interior {
     background-color: #050210;
@@ -57,5 +49,5 @@ body {
     border-radius: 50%;
     position: relative;
     transform: translate(6%, 6%);
-    animation: fill 10s  linear infinite;
+    animation: fill 5s alternate-reverse linear infinite;
 }
